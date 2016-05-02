@@ -59,4 +59,4 @@ For mms messages, if `pdu.m_type = 132` then the message was received. If
 `pdu.m_type = 128` then the message was sent.
 
 SMS dates are stored as milliseconds since the epoch, MMS dates are stored
-in the more traditional seconds-since-epock style.
+in the more traditional seconds-since-epoch style.
