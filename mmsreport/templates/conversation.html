@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SMS History for conversation {{ thread }}</title>
+</head>
+<style>
+    h1 {
+      font-size: 36px;
+      color: #343434;
+      margin: 1em 0 0.5em 0;
+    }
+    table { width: 100%; border: 1px solid #000; }
+
+    th.attachment { width: 5%; }
+    th.date { width: 15%; }
+    th.sender { width: 15%; }
+    th.message { width: 65%; }
+
+    tr.sent:nth-child(even) { background: #CCC }
+    tr.sent:nth-child(odd) { background: #DDD }
+    tr.received:nth-child(even) { background: #99D }
+    tr.received:nth-child(odd) { background: #AAE }
+
+</style>
+<body>
+  <center><h1>{{ start_date }} through {{ end_date }}</h1></center>
+  <table>
+    <tr>
+      <th class='attachment'>img</th>
+      <th class='date'>date</th>
+      <th class='sender'>sender</th>
+      <th class='message'>message</th>
+    </tr>
+    {% for msg in messages %}
+    {% if msg.sent %}
+    <tr class='sent'>
+    {% else %}
+    <tr class='received'>
+    {% endif %}
+      <td align="center">{{ msg.has_attachment }}</td>
+      <td align="center">{{ msg.date }}</td>
+      <td align="right">{{ msg.sender }}</td>
+      <td align="left">{{ msg.message_text }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>

@@ -7,7 +7,7 @@
 *.pyc
 
 # Generated files
-*.html
+./*.html
 
 # test data
 data.db
