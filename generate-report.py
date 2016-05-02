@@ -6,7 +6,7 @@ if __name__ == '__main__':
     input_file = './data.db'
     # optional contact list
     contacts = {
-        # Use 'Canonical' address forms here
+        # Use 'Canonical' number format here
         '(888) 555-1212': 'Fake Number',
     }
     conversations_report(input_file, contacts)

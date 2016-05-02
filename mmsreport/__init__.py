@@ -1,3 +1,0 @@
-"""
-mms-report parent module
-"""

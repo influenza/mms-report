@@ -21,6 +21,15 @@ engine. You'll need to install if it isn't available on your system yet.
     $ source venv/bin/activate
     $ pip install -r requirements.txt
 
+# Running
+
+    $ source venv/bin/activate
+    (venv) $ python generate-report.py
+
+Once this completes, the `./data.db` file's contents will have been rendered into
+a number of html files named after the conversation thread id.
+
+
 # Notes on the database format
 
 I didn't read any spec on the format of the mmssms.db database. Instead
@@ -33,4 +42,5 @@ If `sms.type = 1` then the message was received from `sms.address`. If
 For mms messages, if `pdu.m_type = 132` then the message was received. If
 `pdu.m_type = 128` then the message was sent.
 
-Dates are stored as milliseconds since the epoch.
+SMS dates are stored as milliseconds since the epoch, MMS dates are stored
+in the more traditional seconds-since-epock style.
