@@ -41,6 +41,10 @@ Next, run the utility on the database you just pulled
 Once this completes, the `./data.db` file's contents will have been rendered into
 a number of html files named after the conversation thread id.
 
+The files will look something like this:
+
+[[https://github.com/influenza/mms-report/blob/master/img/SampleOutput.png|alt=sample]]
+
 
 # Notes on the database format
 
