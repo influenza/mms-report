@@ -23,6 +23,18 @@ engine. You'll need to install if it isn't available on your system yet.
 
 # Running
 
+## Grab your mmssms.db file
+
+Using `adb`, pull the following file from your android device:
+
+    $ adb pull /data/data/com.android.providers.telephony/databases
+
+Note that you may need to allow root access to adb through the developer settings
+on your device. I'm assuming you have a rooted device.
+
+Next, run the utility on the database you just pulled
+
+    $ cp /path/to/your/pulled/mmssms.db ./data.db
     $ source venv/bin/activate
     (venv) $ python generate-report.py
 
