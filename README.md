@@ -27,7 +27,7 @@ engine. You'll need to install if it isn't available on your system yet.
 
 Using `adb`, pull the following file from your android device:
 
-    $ adb pull /data/data/com.android.providers.telephony/databases
+    $ adb pull /data/data/com.android.providers.telephony/databases/mmssms.db
 
 Note that you may need to allow root access to adb through the developer settings
 on your device. I'm assuming you have a rooted device.
