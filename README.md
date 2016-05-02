@@ -43,7 +43,7 @@ a number of html files named after the conversation thread id.
 
 The files will look something like this:
 
-[[https://github.com/influenza/mms-report/blob/master/img/SampleOutput.png|alt=sample]]
+![sample output](https://github.com/influenza/mms-report/blob/master/img/SampleOutput.png)
 
 
 # Notes on the database format
