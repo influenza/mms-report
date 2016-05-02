@@ -8,3 +8,6 @@
 
 # Generated files
 *.html
+
+# test data
+data.db
